@@ -1,0 +1,22 @@
+{
+  "name": "node-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=build/index.js",
+    "start": "node build/index.js",
+    "dev": "esr src/index.ts",
+    "check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Samuel S. Watson",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "esbuild": "^0.17.10",
+    "esbuild-runner": "^2.2.2",
+    "typescript": "^4.9.5"
+  }
+}
